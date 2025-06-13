@@ -1,7 +1,19 @@
 [
     {
-        "origin": ["*"],
-        "method": ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+        "origin": [
+            "*",
+            "https://elgringoautotaller.github.io/PlatformWeb",
+            "https://elgringoautotaller.github.io/PlatformWeb/#/login",
+            "https://elgringoautotaller.github.io/PlatformWeb/#/register",
+            "https://elgringoautotaller.github.io/PlatformWeb/#/dashboard"
+        ],
+        "method": [
+            "GET",
+            "POST",
+            "PUT",
+            "DELETE",
+            "OPTIONS"
+        ],
         "responseHeader": [
             "Content-Type",
             "Authorization",
