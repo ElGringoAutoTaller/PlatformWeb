@@ -63,17 +63,14 @@ La base de datos central del proyecto se llama `AutoRepuestoElGringo` y contiene
 
     echo "# PlatformRepo" >> README.md
 
-    git init
-
-    git add README.md
-
-    git commit -m "first commit"
-
-    git branch -M main
-
-    git remote add origin https://github.com/ElGringoAutoTaller/PlatformRepo.git
-
-    git push -u origin main
+  echo "# PlatformWeb" >> README.md
+  git init
+  git add README.md
+  git commit -m "first commit"
+  git branch -M main
+  git remote add origin https://github.com/ElGringoAutoTaller/PlatformWeb.git
+  git push -u origin main
+  
 ```
 
 ## 📌 Relaciones Clave
