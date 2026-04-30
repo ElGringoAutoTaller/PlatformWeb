@@ -1,0 +1,408 @@
+{
+  "_metadata": {
+    "version": "1.0.0",
+    "description": "Datos de ejemplo para demostración en web",
+    "date": "2026-04-29",
+    "currency": "USD"
+  },
+  "users": [
+    {
+      "uid": "demo_user_001",
+      "email": "demo@grupoelgringo.com",
+      "name": "Usuario",
+      "lastname": "Demo",
+      "role": "admin",
+      "permission": "all",
+      "created_at": "2026-01-01T10:00:00Z"
+    }
+  ],
+  "clientes": [
+    {
+      "_key": "cli_001",
+      "cod": "C001",
+      "nombres": "Juan",
+      "apellidos": "Pérez García",
+      "cedula": "12345678",
+      "telefono": "555-1001",
+      "direccion": "Calle Principal 123, Apartado 1",
+      "email": "juan.perez@email.com",
+      "referencias": "Cliente mayorista"
+    },
+    {
+      "_key": "cli_002",
+      "cod": "C002",
+      "nombres": "María",
+      "apellidos": "López Martínez",
+      "cedula": "87654321",
+      "telefono": "555-1002",
+      "direccion": "Avenida Central 456, Apartado 2",
+      "email": "maria.lopez@email.com",
+      "referencias": "Cliente frecuente"
+    },
+    {
+      "_key": "cli_003",
+      "cod": "C003",
+      "nombres": "Carlos",
+      "apellidos": "Rodríguez Sánchez",
+      "cedula": "11111111",
+      "telefono": "555-1003",
+      "direccion": "Calle Secundaria 789, Apartado 3",
+      "email": "carlos.rodriguez@email.com",
+      "referencias": "Nuevo cliente"
+    }
+  ],
+  "proveedores": [
+    {
+      "_key": "prov_001",
+      "cod": "P001",
+      "nombre": "Distribuidora Central",
+      "contacto": "Roberto García",
+      "telefono": "555-2001",
+      "email": "info@distribuidora-central.com",
+      "direccion": "Zona Industrial 101",
+      "referencias": "Proveedor principal"
+    },
+    {
+      "_key": "prov_002",
+      "cod": "P002",
+      "nombre": "Importaciones Globales",
+      "contacto": "Patricia Soto",
+      "telefono": "555-2002",
+      "email": "contacto@importaciones-globales.com",
+      "direccion": "Puerto 202",
+      "referencias": "Proveedor internacional"
+    }
+  ],
+  "categorias": [
+    {
+      "_key": "cat_001",
+      "cod": "CAT001",
+      "nombre": "Repuestos Motores",
+      "descripcion": "Piezas de motor y sistemas relacionados"
+    },
+    {
+      "_key": "cat_002",
+      "cod": "CAT002",
+      "nombre": "Sistema Eléctrico",
+      "descripcion": "Componentes eléctricos y baterías"
+    },
+    {
+      "_key": "cat_003",
+      "cod": "CAT003",
+      "nombre": "Suspensión",
+      "descripcion": "Amortiguadores, muelles y bases"
+    },
+    {
+      "_key": "cat_004",
+      "cod": "CAT004",
+      "nombre": "Frenos",
+      "descripcion": "Pastillas, discos y líquidos de freno"
+    }
+  ],
+  "productos": [
+    {
+      "_key": "prod_001",
+      "cod": "PROD001",
+      "nombre": "Filtro de Aire",
+      "descripcion": "Filtro de aire de motor de alta performance",
+      "categoria": "cat_001",
+      "proveedor": "prov_001",
+      "cantidad": "150",
+      "precio_costo": "8.50",
+      "precio_venta": "15.99",
+      "precio_mayorista": "12.50",
+      "iva": "15.00"
+    },
+    {
+      "_key": "prod_002",
+      "cod": "PROD002",
+      "nombre": "Pastilla de Freno",
+      "descripcion": "Juego de pastillas de freno delanteras",
+      "categoria": "cat_004",
+      "proveedor": "prov_001",
+      "cantidad": "75",
+      "precio_costo": "22.00",
+      "precio_venta": "49.99",
+      "precio_mayorista": "38.50",
+      "iva": "15.00"
+    },
+    {
+      "_key": "prod_003",
+      "cod": "PROD003",
+      "nombre": "Batería 12V 60Ah",
+      "descripcion": "Batería de carro 12 voltios 60 amperios",
+      "categoria": "cat_002",
+      "proveedor": "prov_002",
+      "cantidad": "45",
+      "precio_costo": "75.00",
+      "precio_venta": "129.99",
+      "precio_mayorista": "100.00",
+      "iva": "15.00"
+    },
+    {
+      "_key": "prod_004",
+      "cod": "PROD004",
+      "nombre": "Amortiguador Trasero",
+      "descripcion": "Par de amortiguadores traseros hydraulicos",
+      "categoria": "cat_003",
+      "proveedor": "prov_002",
+      "cantidad": "30",
+      "precio_costo": "45.00",
+      "precio_venta": "99.99",
+      "precio_mayorista": "75.00",
+      "iva": "15.00"
+    }
+  ],
+  "ventas": [
+    {
+      "_key": "vent_001",
+      "cod": "V001",
+      "cliente": "cli_001",
+      "fecha": "2026-04-28",
+      "total_monto": "500.00",
+      "iva_total": "75.00",
+      "monto_descuento": "0.00",
+      "forma_pago": "1",
+      "estado": "completada",
+      "observaciones": "Venta de demostración",
+      "created_at": "2026-04-28T14:30:00Z"
+    },
+    {
+      "_key": "vent_002",
+      "cod": "V002",
+      "cliente": "cli_002",
+      "fecha": "2026-04-29",
+      "total_monto": "750.00",
+      "iva_total": "112.50",
+      "monto_descuento": "50.00",
+      "forma_pago": "2",
+      "estado": "completada",
+      "observaciones": "Venta mayorista",
+      "created_at": "2026-04-29T09:15:00Z"
+    }
+  ],
+  "venta_detalle": [
+    {
+      "_key": "ventdet_001",
+      "codigo_venta": "vent_001",
+      "codigo_producto": "prod_001",
+      "cantidad": "20",
+      "precio_unitario": "15.99",
+      "iva_unitario": "2.40",
+      "descuento": "0.00",
+      "total_linea": "319.80"
+    },
+    {
+      "_key": "ventdet_002",
+      "codigo_venta": "vent_001",
+      "codigo_producto": "prod_002",
+      "cantidad": "5",
+      "precio_unitario": "49.99",
+      "iva_unitario": "7.50",
+      "descuento": "0.00",
+      "total_linea": "249.95"
+    },
+    {
+      "_key": "ventdet_003",
+      "codigo_venta": "vent_002",
+      "codigo_producto": "prod_003",
+      "cantidad": "3",
+      "precio_unitario": "129.99",
+      "iva_unitario": "19.50",
+      "descuento": "0.00",
+      "total_linea": "389.97"
+    },
+    {
+      "_key": "ventdet_004",
+      "codigo_venta": "vent_002",
+      "codigo_producto": "prod_004",
+      "cantidad": "2",
+      "precio_unitario": "99.99",
+      "iva_unitario": "15.00",
+      "descuento": "0.00",
+      "total_linea": "199.98"
+    }
+  ],
+  "compras": [
+    {
+      "_key": "comp_001",
+      "cod": "C001",
+      "proveedor": "prov_001",
+      "fecha": "2026-04-20",
+      "numero_factura": "INV-2001",
+      "total_monto": "1200.00",
+      "iva_total": "180.00",
+      "monto_descuento": "0.00",
+      "forma_pago": "1",
+      "estado": "completada",
+      "observaciones": "Compra de inventario inicial",
+      "created_at": "2026-04-20T10:00:00Z"
+    },
+    {
+      "_key": "comp_002",
+      "cod": "C002",
+      "proveedor": "prov_002",
+      "fecha": "2026-04-25",
+      "numero_factura": "INV-2002",
+      "total_monto": "800.00",
+      "iva_total": "120.00",
+      "monto_descuento": "100.00",
+      "forma_pago": "2",
+      "estado": "completada",
+      "observaciones": "Compra con descuento",
+      "created_at": "2026-04-25T15:30:00Z"
+    }
+  ],
+  "compra_detalle": [
+    {
+      "_key": "compdet_001",
+      "codigo_compra": "comp_001",
+      "codigo_producto": "prod_001",
+      "cantidad": "100",
+      "precio_unitario": "8.50",
+      "iva_unitario": "1.27",
+      "descuento": "0.00",
+      "total_linea": "850.00"
+    },
+    {
+      "_key": "compdet_002",
+      "codigo_compra": "comp_001",
+      "codigo_producto": "prod_002",
+      "cantidad": "25",
+      "precio_unitario": "22.00",
+      "iva_unitario": "3.30",
+      "descuento": "0.00",
+      "total_linea": "550.00"
+    },
+    {
+      "_key": "compdet_003",
+      "codigo_compra": "comp_002",
+      "codigo_producto": "prod_003",
+      "cantidad": "10",
+      "precio_unitario": "75.00",
+      "iva_unitario": "11.25",
+      "descuento": "0.00",
+      "total_linea": "750.00"
+    }
+  ],
+  "caja": [
+    {
+      "_key": "caja_001",
+      "cod": "CJ001",
+      "fecha": "2026-04-29",
+      "saldo_inicial": "1000.00",
+      "total_ingresos": "1250.00",
+      "total_egresos": "500.00",
+      "saldo_final": "1750.00",
+      "estado": "abierta",
+      "usuario": "demo_user_001",
+      "observaciones": "Caja de demostración",
+      "created_at": "2026-04-29T08:00:00Z"
+    }
+  ],
+  "ingresos_caja": [
+    {
+      "_key": "ing_001",
+      "caja": "caja_001",
+      "venta": "vent_001",
+      "cantidad": "500.00",
+      "concepto": "Venta de repuestos",
+      "forma_pago": "1",
+      "usuario": "demo_user_001",
+      "fecha": "2026-04-29T10:30:00Z"
+    },
+    {
+      "_key": "ing_002",
+      "caja": "caja_001",
+      "venta": "vent_002",
+      "cantidad": "750.00",
+      "concepto": "Venta mayorista",
+      "forma_pago": "2",
+      "usuario": "demo_user_001",
+      "fecha": "2026-04-29T14:15:00Z"
+    }
+  ],
+  "egresos_caja": [
+    {
+      "_key": "egr_001",
+      "caja": "caja_001",
+      "cantidad": "500.00",
+      "concepto": "Abono a proveedor",
+      "forma_pago": "1",
+      "usuario": "demo_user_001",
+      "fecha": "2026-04-29T16:45:00Z"
+    }
+  ],
+  "cuentas_por_pagar": [
+    {
+      "id": "cupp_001",
+      "idCompra": "comp_001",
+      "idProveedor": "prov_001",
+      "numeroFactura": "INV-2001",
+      "fechaCompra": "2026-04-20",
+      "fechaVencimiento": "2026-05-20",
+      "montoTotal": "1200.00",
+      "montoPendiente": "1200.00",
+      "estado": "P",
+      "observaciones": "Pago pendiente en 30 días",
+      "fechaCreacion": "2026-04-20T10:00:00Z",
+      "formaPagoOriginal": "1"
+    },
+    {
+      "id": "cupp_002",
+      "idCompra": "comp_002",
+      "idProveedor": "prov_002",
+      "numeroFactura": "INV-2002",
+      "fechaCompra": "2026-04-25",
+      "fechaVencimiento": "2026-05-25",
+      "montoTotal": "800.00",
+      "montoPendiente": "500.00",
+      "estado": "P",
+      "observaciones": "Parcialmente pagado",
+      "fechaCreacion": "2026-04-25T15:30:00Z",
+      "formaPagoOriginal": "2"
+    }
+  ],
+  "abonos_cuentasporpagar": [
+    {
+      "id": "abono_001",
+      "idCuentaPorPagar": "cupp_002",
+      "idProveedor": "prov_002",
+      "numeroFactura": "INV-2002",
+      "fechaAbono": "2026-04-27",
+      "montoAbono": "300.00",
+      "formaPago": "1",
+      "numeroReferencia": "CHK-12345",
+      "descripcion": "Primer abono de compra",
+      "fechaCreacion": "2026-04-27T11:00:00Z",
+      "creadoPor": "demo_user_001"
+    }
+  ],
+  "abonos": [
+    {
+      "_key": "abono_001",
+      "cod": "AB001",
+      "venta": "vent_001",
+      "cliente": "cli_001",
+      "fecha": "2026-04-29",
+      "monto": "500.00",
+      "forma_pago": "1",
+      "numero_referencia": "REF-001",
+      "observaciones": "Abono a cuenta",
+      "usuario": "demo_user_001",
+      "created_at": "2026-04-29T11:30:00Z"
+    }
+  ],
+  "resumen": {
+    "total_clientes": 3,
+    "total_proveedores": 2,
+    "total_productos": 4,
+    "total_ventas": 2,
+    "ventas_total": "1250.00",
+    "total_compras": 2,
+    "compras_total": "2000.00",
+    "caja_saldo": "1750.00",
+    "cuentas_por_pagar": "2000.00",
+    "cuentas_por_cobrar": "0.00"
+  }
+}
